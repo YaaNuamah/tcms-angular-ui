@@ -10,7 +10,7 @@ import { HomeComponent } from './home/home.component';
 const routes: Routes = [
   {path: 'customers',component: CustomersComponent},
   {path: 'projects', component: ProjectsComponent},
-  {path: '', redirectTo: '/customers', pathMatch: 'full'},
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'reports', component: ReportsComponent},
   {path: 'nav', component: NavComponent},
   {path: 'home', component:HomeComponent}
