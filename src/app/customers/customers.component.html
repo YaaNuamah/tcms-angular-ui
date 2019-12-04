@@ -1,6 +1,16 @@
     
     
+    <!--Customers Table -->
+
+    <div class="card mb-4 shadow p-4 mb-6 bg- white rounded" style="margin-top:-90px;">
+    <form class="form-inlinr md-form form-sm active-cyan-3 mt-3" style="margin-left:20px;">
+    <input class="form-contril-sm mr-4 w-75" type="text" placeholder="Search for a customer" aria-label="Search">
+    <i class="fas fa-search" aria-hidden="true"></i>
+    </form>
+    <h2 id="customers" style="margin-top:20px;">Customers Details</h2>
     
+    <div class="card-body">
+<div class="table-responsive">
     <table class="table">
         <thead class="thead-dark">
         <tr>
@@ -9,16 +19,19 @@
             <th scope="col">LastName</th>
             <th scope="col">Contact Number</th>
             <th scope="col">Address</th>
+            <th scope="col">Email</th>
             <th scope="col">Actions</th>
+
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>Richmond</td>
-            <td>Ofori</td>
-            <td>0268921345</td>
-            <td>123 Mustard Steet Lane</td>
+        <tr *ngFor="let customer of customers">
+            <th scope="row">{{customer.id}}</th>
+            <td>{{customer.FirstName}}</td>
+            <td>{{customer.LastName}}</td>
+            <td>{{customer.Contact}}</td>
+            <td>{{customer.Email}}</td>
+            <td>{{customer.Address}}</td>
             <td>
                 <button type="button" class="btn btn-primary"><i class="far fa-eye"></i> </button>
                 <button type="button" class="btn btn-primary"><i class="fas fa-edit"></i> </button>
@@ -26,32 +39,10 @@
     
             </td>
         </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Lucy</td>
-            <td>Lou</td>
-            <td>0234567890</td>
-            <td>32 Madina Steet Lane</td>
-            <td>
-                <button type="button" class="btn btn-primary"><i class="far fa-eye"></i> </button>
-                <button type="button" class="btn btn-primary"><i class="fas fa-edit"></i> </button>
-                <button type="button" class="btn btn-primary"><i class="far fa-trash-alt"></i> </button>
-    
-            </td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>Mandy</td>
-            <td>Opoku</td>
-            <td>0278921342</td>
-            <td>123 Mustard St Lane</td>
-            <td>
-                <button type="button" class="btn btn-primary"><i class="far fa-eye"></i></button>
-                <button type="button" class="btn btn-primary"><i class="fas fa-edit"></i></button>
-                <button type="button" class="btn btn-primary"><i class="far fa-trash-alt"></i> </button>
-    
-            </td>
-        </tr>
+       
         </tbody>
     </table>
+</div>
+    </div>
+    </div>
     
