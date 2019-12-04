@@ -5,7 +5,7 @@ const path = require('path');
 const app = express();
 
 //Serve only the static files from the dist directory
-app.use(express.static(__dirname + 'dist/tcms-angular-ui'));
+app.use(express.static(__dirname + '/dist/tcms-angular-ui'));
 
 app.get('/*', function(req,res) {
     res.sendFile(path.join(__dirname+'/dist/tcms-angular-ui/index.html'));
