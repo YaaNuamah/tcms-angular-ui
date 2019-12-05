@@ -20,9 +20,10 @@ export class CustomersComponent implements OnInit {
     this.customerservice.getCustomers()
       .subscribe(data => this.customers = data);
         }
-
+        
     ngOnInit() {
           this.getCustomers();
+          
    }
   
   }

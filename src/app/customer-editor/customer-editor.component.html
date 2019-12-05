@@ -1,0 +1,32 @@
+<form [formGroup]="profileForm" (ngSubmit)= "onSubmit()">
+
+    
+
+    <label>
+        Address:
+        <input type="text" formControlName="customer_address">
+    </label>
+
+    <label>
+         Email:
+        <input type="text" formControlName="customer_email">
+    </label>
+
+    <label>
+        Level:
+        <input type="text" formControlName="customer_level">
+    </label>
+    <label>
+        Name:
+        <input type="text" formControlName="customer_name">
+    </label>
+
+    <label>
+        Telephone:
+        <input type="text" formControlName="customer_telephone">
+    </label>
+    
+    <button type = "submit">Submit</button>
+        
+    
+</form>

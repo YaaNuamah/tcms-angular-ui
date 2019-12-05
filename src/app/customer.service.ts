@@ -21,6 +21,14 @@ export class CustomerService {
 
   getCustomers(): Observable<Customers[]> {
     return this.http.get<Customers[]>(this.customerUrl)
-    
   }
+  // removeCustomer(); Observable<Customers> {
+  //   return this.HTMLOutputElement.remove<Customers[]this.customerUrl)
+  // }
+
+  //Save Methods
+  addCustomer (variable): Observable<Customers[]> {
+    return this.http.post<Customers[]>(this.customerUrl, variable,
+    this.httpOptions)
+}
 }

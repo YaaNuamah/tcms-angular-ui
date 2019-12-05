@@ -1,19 +1,10 @@
     
     
     <!--Customers Table -->
-
-<div class="card mb-4 shadow p-4 mb-6 bg- white rounded" style="margin-top:-90px;">
-    <form class="form-inlinr md-form form-sm active-cyan-3 mt-3" style="margin-left:20px;">
-        <input class="form-contril-sm mr-4 w-75" type="text" placeholder="Search for a customer" aria-label="Search">
-        <i class="fas fa-search" aria-hidden="true"></i>
-    </form>
-
-    <h2 id="customers" style="margin-top:20px;">Customers Details</h2>
+    <div class="text-right mx-5 my-2 py-2">
+        <a routerLink="/customer-editor"><button class="btn add btn-primary">Add</button></a>
+    </div>
     
-    <div class="card-body">
-
-
-    <div class="table-responsive">
         <table class="table">
             <thead class="thead-dark">
             <tr>
@@ -34,9 +25,9 @@
                 <td>{{customer.customer_email}}</td>
                 <td>{{customer.customer_address}}</td>
                 <td>{{customer.customer_telephone}}</td>
-                <td>{{customer.customer_leve}}</td>
+                <td>{{customer.customer_level}}</td>
                 <td>
-                    <button type="button" class="btn btn-primary"><i class="far fa-eye"></i> </button>
+                   <a href="/customer-details"> <button type="button" class="btn btn-primary"><i class="far fa-eye"></i></button></a>
                     <button type="button" class="btn btn-primary"><i class="fas fa-edit"></i> </button>
                     <button type="button" class="btn btn-primary"><i class="far fa-trash-alt"></i> </button>
         
@@ -45,8 +36,6 @@
 
             </tbody>
 
-            </table>
-        </div>
-    </div>
-</div>
+    </table>
+        
     

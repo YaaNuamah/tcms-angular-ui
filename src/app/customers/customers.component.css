@@ -1,0 +1,4 @@
+button.btn.add::before {
+    font-family: fontAwesome;
+    content: "\f067\00a0";
+  }
