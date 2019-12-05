@@ -41,6 +41,10 @@ export class CustomerEditorComponent implements OnInit {
         )
         this.profileForm.reset();
         this.msg = "Customer successfully added!";
+
+
+        // this.customerService.removeCustomer(this.profileForm.patchValue)
+
         }
       
 
